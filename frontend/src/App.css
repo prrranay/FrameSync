@@ -25,7 +25,6 @@
   display: flex;
   gap: 1.6rem;
   cursor: pointer;
-
 }
 
 .landingMainContainer {
@@ -65,7 +64,22 @@
   justify-content: space-between;
   padding-inline: 20px;
   text-align: center;
-
+}
+.navBar h2{
+  font-size: 1rem;
+}
+.entry h2{
+  padding: 1rem;
+}
+.entry .MuiFormControl-root{
+  width:15rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.entry .MuiButtonBase-root{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
 }
 .meetContainer {
   display: flex;
@@ -84,6 +98,10 @@
 
 }
 
+.leftPanel h2{
+  margin-bottom: 1rem;
+}
+
 .rightPanel {
   display: flex;
   align-items: center;
@@ -93,4 +111,27 @@
   width: 30vw;
   height: auto;
   border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .landingPageContainer nav .navlist {
+    gap: 0.6rem;
+    text-decoration: underline;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 152, 57);
+  }
+  .landingMainContainer>div:nth-child(1){
+    font-size: 1.5rem;
+  }
+  .landingMainContainer>div:nth-child(2) img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .landingPageContainer nav .navlist{
+    display: none;
+  }
 }
